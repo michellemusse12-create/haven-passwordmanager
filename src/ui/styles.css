@@ -1,0 +1,93 @@
+:root{font-family:"Segoe UI",Arial,sans-serif;color:#202b27;background:#f5f6f2;font-synthesis:none;text-rendering:optimizeLegibility;font-weight:400;font-size:14px}
+*{box-sizing:border-box}
+body{margin:0;min-width:320px;min-height:100vh}
+button,input,textarea{font:inherit}
+button{cursor:pointer}
+.auth-page{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:36px 22px;background:radial-gradient(ellipse at 50% 10%,#edf5e9 0,transparent 52%),#f5f6f2}
+.brand-mark{width:48px;height:48px;background:#1f463a;color:#eff8ed;border-radius:15px;display:grid;place-items:center;font:800 24px "Segoe UI",Arial,sans-serif;box-shadow:0 6px 15px #1f463a22}
+.brand-mark.small{width:34px;height:34px;font-size:18px;border-radius:11px}
+.auth-page>.eyebrow{margin:28px 0 10px}
+.eyebrow,.side-label{font-size:10px;font-weight:700;letter-spacing:1.55px;color:#80918a}
+h1,h2,p{margin-top:0}
+.auth-page h1{font:700 clamp(28px,5vw,36px) "Segoe UI",Arial,sans-serif;letter-spacing:-1.3px;text-align:center;margin:0}
+.auth-copy{max-width:375px;color:#76827d;text-align:center;line-height:1.65;margin:15px 0 28px}
+.auth-card{width:min(100%,405px);padding:26px;background:#fff;border:1px solid #e8ebe5;border-radius:15px;box-shadow:0 12px 35px #23392b0b}
+label{display:block;color:#46534e;font-size:12px;font-weight:600;margin-bottom:16px}
+.auth-card label{margin-bottom:9px}
+input,textarea{width:100%;margin-top:8px;border:1px solid #e1e6e1;background:#fff;border-radius:8px;padding:12px;color:#26342e;outline:none;transition:border .15s,box-shadow .15s}
+input:focus,textarea:focus{border-color:#6e9a7f;box-shadow:0 0 0 3px #dcebe0}
+.auth-card small{display:block;color:#819088;font-size:11px;margin:9px 0 20px}
+.primary,.secondary{border:0;border-radius:8px;padding:11px 16px;font-weight:600;font-size:12px;transition:background .15s,transform .15s}
+.primary{background:#214b3c;color:#fff}
+.primary:hover{background:#173c30;transform:translateY(-1px)}
+.primary.full{width:100%;margin-top:13px}
+.secondary{background:#f2f4f0;color:#46534e}
+.secondary:hover{background:#e8ede7}
+.fine-print{font-size:10px;letter-spacing:.15px;color:#98a29d;margin:19px 0 0}
+.error{color:#bb4141;font-size:12px;line-height:1.5;margin:12px 0}
+.app-shell{min-height:100vh}
+.sidebar{position:fixed;inset:0 auto 0 0;width:235px;background:#fff;border-right:1px solid #e9ece7;padding:26px 18px;display:flex;flex-direction:column}
+.brand{display:flex;align-items:center;gap:10px;font:800 19px "Segoe UI",Arial,sans-serif;letter-spacing:-.7px;margin:0 0 51px 4px;color:#263d33}
+.side-label{margin:0 0 13px 10px}
+.side-item{border:0;background:transparent;color:#65726c;display:flex;align-items:center;text-align:left;gap:12px;padding:11px;border-radius:8px;width:100%;font-size:12px}
+.side-item.selected{background:#edf4ee;color:#285341;font-weight:600}
+.side-item>span:first-child{font-size:15px;width:16px;text-align:center}
+.count{margin-left:auto;background:#fff;padding:3px 7px;border-radius:10px;font-size:10px}
+.sidebar-bottom{margin-top:auto}
+.secure-state{display:flex;align-items:center;gap:8px;color:#89958e;font-size:10px;margin:0 0 12px 9px}
+.live-dot{height:7px;width:7px;border-radius:50%;background:#71a581;display:inline-block;box-shadow:0 0 0 3px #e7f2e8}
+.lock-button{border-top:1px solid #eff0ed;border-radius:0;padding-top:18px}
+.main-content{margin-left:235px;max-width:1400px;padding:45px 5.2vw 50px}
+.topbar{display:flex;align-items:center;justify-content:space-between}
+.topbar .eyebrow{margin-bottom:8px}
+.topbar h1{font:700 29px "Segoe UI",Arial,sans-serif;letter-spacing:-1px;margin:0}
+.topbar>.primary{padding:12px 17px}
+.toolbar{margin-top:34px;padding:15px 0;border-top:1px solid #e4e8e1;border-bottom:1px solid #e4e8e1;display:flex;align-items:center;justify-content:space-between}
+.search-wrap{position:relative;width:min(410px,70%)}
+.search-wrap>span{position:absolute;left:13px;top:8px;color:#85918b;font-size:22px}
+.search-wrap input{padding:10px 12px 10px 40px;margin:0;background:#fff;border-color:#e7eae5;font-size:12px}
+.toolbar-note{font-size:11px;color:#85918b;display:flex;align-items:center;gap:9px}
+.toolbar-note .live-dot{height:6px;width:6px}
+.vault-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:15px;margin-top:25px}
+.vault-card{background:#fff;border:1px solid #e7ebe5;border-radius:12px;padding:18px 18px 13px;box-shadow:0 3px 12px #203c2e07}
+.card-heading{display:flex;align-items:center;gap:11px;margin-bottom:20px}
+.site-avatar{width:37px;height:37px;border-radius:11px;background:#e8f0e9;color:#3a6a4e;display:grid;place-items:center;font:700 15px "Segoe UI",Arial,sans-serif}
+.site-name{min-width:0;flex:1}
+.site-name h2{font:700 13px "Segoe UI",Arial,sans-serif;margin:0 0 4px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.site-name p{color:#87928d;font-size:11px;margin:0;overflow:hidden;text-overflow:ellipsis}
+.icon-button{border:0;background:transparent;color:#75837c;font-size:20px;letter-spacing:1px;padding:5px 8px;border-radius:6px}
+.icon-button:hover{background:#f2f5f1}
+.secret-row,.totp-row{padding:12px 0;border-top:1px solid #f0f2ee}
+.field-label{font-size:9px;color:#9aa49f;font-weight:700;letter-spacing:1.05px}
+.secret-value,.totp-value{display:flex;align-items:center;gap:13px;margin-top:7px}
+.secret-value>span{font:12px monospace;letter-spacing:1.3px;flex:1;overflow:hidden;text-overflow:ellipsis}
+.text-button{border:0;background:transparent;padding:4px 2px;color:#4f7d61;font-size:10px;font-weight:600}
+.text-button:hover{text-decoration:underline}
+.totp-value strong{font:700 20px "Segoe UI",Arial,sans-serif;letter-spacing:2px;color:#315b43;flex:1}
+.card-actions{border-top:1px solid #f0f2ee;padding-top:8px;display:flex;justify-content:flex-end;gap:13px}
+.danger-text{color:#a46b66}
+.empty-state{min-height:440px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:35px}
+.empty-icon{width:57px;height:57px;background:#e9f1e9;color:#588164;border-radius:18px;display:grid;place-items:center;font-size:25px;margin-bottom:20px}
+.empty-state h2{font:700 19px "Segoe UI",Arial,sans-serif;margin:0 0 8px}
+.empty-state p{max-width:360px;color:#85918b;line-height:1.65;font-size:12px;margin:0 0 20px}
+.empty-state .primary{font-size:11px}
+.results-count{color:#97a19b;font-size:10px;margin-top:18px}
+.no-results{text-align:center;padding:100px 20px;color:#85918b}
+.notice{position:fixed;z-index:5;right:26px;bottom:24px;padding:12px 17px;background:#263f33;color:#fff;border-radius:9px;font-size:11px;box-shadow:0 5px 20px #14271e33}
+.modal-backdrop{position:fixed;inset:0;background:#1d2b2580;display:grid;place-items:center;padding:18px;z-index:10;overflow:auto}
+.entry-modal{width:min(100%,490px);background:#fff;border-radius:14px;padding:25px 27px 22px;box-shadow:0 22px 65px #12241d45;max-height:calc(100vh - 36px);overflow:auto}
+.modal-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
+.modal-heading .eyebrow{margin-bottom:7px}
+.modal-heading h2{font:700 21px "Segoe UI",Arial,sans-serif;margin:0;letter-spacing:-.5px}
+.close-button{font-size:24px}
+.entry-modal label{margin-bottom:13px}
+.entry-modal input,.entry-modal textarea{font-size:12px;padding:10px 11px}
+.optional{font-size:8px;color:#9ba49f;letter-spacing:.65px;margin-left:5px}
+.password-input{display:flex;align-items:center;gap:10px}
+.password-input input{flex:1;min-width:0}
+.password-input .text-button{white-space:nowrap}
+.generated-password{padding:9px 11px;background:#f4f7f2;border-radius:7px;display:flex;justify-content:space-between;align-items:center;gap:10px;color:#78877e;font-size:10px;margin:-1px 0 14px}
+.generated-password code{font-size:10px;color:#335c43;word-break:break-all;text-align:right}
+.modal-actions{display:flex;justify-content:flex-end;gap:9px;padding-top:7px}
+@media(max-width:720px){.sidebar{width:62px;padding:20px 10px}.brand{margin:0 0 45px;justify-content:center}.brand strong,.side-label,.side-item:not(.selected):not(.lock-button),.side-item.selected{font-size:0}.side-item{justify-content:center;padding:12px 0}.side-item>span:first-child{font-size:16px}.count{display:none}.secure-state{font-size:0;margin-left:17px}.lock-button{font-size:0}.main-content{margin-left:62px;padding:28px 20px}.topbar h1{font-size:25px}.toolbar-note{font-size:0}.vault-grid{grid-template-columns:1fr}.auth-page h1{max-width:400px}.fine-print{text-align:center}}
+@media(max-width:420px){.main-content{padding:25px 14px}.topbar>.primary{padding:10px 11px}.topbar>.primary span{font-size:10px}.entry-modal{padding:21px 19px}.auth-card{padding:22px}}
